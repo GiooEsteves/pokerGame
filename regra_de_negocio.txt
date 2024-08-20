@@ -1,0 +1,47 @@
+Carta:
+    valor
+    naipe
+    - comparacao_carta
+    - representacao_carta
+
+Baralho:
+    conjunto (de cartas)
+    - embaralhar
+    - remover_carta
+
+Jogador:
+    nome
+    fichas
+    mão (mão de cartas)
+    estado (estado no jogo: ativo, passa, all-in)
+    - fazer_aposta
+    - desistir (fold)
+    - ver_cartas
+    - mostrar_fichas
+    - mostrar_cartas
+
+Mesa: 
+    cartas_comunitarias (5 cartas da mesa)
+    pote
+    lista_jogadores
+    dealer
+    - adicionar_carta_comunitaria
+    - distribuir_cartas
+    - recolher_aposta
+    - vencedor_rodada
+
+Dealer:
+    posicao_mesa
+    Jogador
+    - revelar_cartas_comunitarias
+    - iniciar_rodada
+    
+Jogo:
+    lista_jogadores
+    dealer
+    Baralho
+    estado_jogo
+    - iniciar_jogo
+    - controla_fluxo_jogo
+    - gerenciar_aposta
+    - vencedor_final
