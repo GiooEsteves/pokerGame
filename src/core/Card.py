@@ -1,10 +1,10 @@
 class Card():
-    def __init__(self, value, suit):
-        self.value = value
-        self.suit = suit
+    def __init__(self, valor, naipe):
+        self.valor = valor
+        self.naipe = naipe
 
     def compare(self):
         pass
 
-    def represent_card(self, value, suit):
+    def represent_card(self, valor, naipe):
         pass
