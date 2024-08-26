@@ -3,6 +3,8 @@ class Card():
         self.value = value
         self.suit = suit
 
-    def biggerCard():
+    def compare(self):
         pass
-    
+
+    def represent_card(self, value, suit):
+        pass

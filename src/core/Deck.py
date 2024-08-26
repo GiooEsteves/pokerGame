@@ -9,6 +9,5 @@ class Deck():
     def shuffle(self):
         pass
 
-    def distributeCards(self):
+    def remove_card(self):
         pass
-    
